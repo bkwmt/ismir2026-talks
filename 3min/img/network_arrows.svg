@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1136 241" width="1136" height="241">
+  <!-- 疊在三張網絡圖上（每張 368 寬、間距 16：a 0–368、b 384–752、c 768–1136） -->
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9B2744"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="#9B2744" stroke-linecap="round">
+    <!-- 1. 左圖的網絡 → 中圖下方 -->
+    <path d="M 300 120 C 380 120, 470 150, 548 176" stroke-width="3.5" marker-end="url(#ah)"/>
+    <!-- 2. 中圖右上的新群（樂手） → 右圖左側的大網絡 -->
+    <ellipse cx="697" cy="37" rx="62" ry="33" stroke-width="2.5" stroke-dasharray="6 5"/>
+    <path d="M 760 38 C 800 40, 830 60, 850 84" stroke-width="3.5" marker-end="url(#ah)"/>
+    <!-- 3. 右圖右側（舊網絡的核心）被大網絡吸收 -->
+    <ellipse cx="1012" cy="122" rx="58" ry="50" stroke-width="2.5" stroke-dasharray="6 5"/>
+    <path d="M 956 128 L 930 125" stroke-width="3.5" marker-end="url(#ah)"/>
+  </g>
+  <g font-family="Noto Sans TC, sans-serif" font-size="15" font-weight="700" fill="#9B2744"
+     stroke="#ffffff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">
+    <text x="630" y="18" text-anchor="end">new: musicians</text>
+    <text x="1012" y="64" text-anchor="middle">absorbed</text>
+  </g>
+</svg>
